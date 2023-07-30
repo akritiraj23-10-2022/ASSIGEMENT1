@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>froms</title>
+        <style>
+            
+                body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: goldenrod;
+        padding: 20px;
+            }
+            .container {
+                max-width: 600px;
+                margin: 0 auto;
+                background-color:#fff;
+                padding: 200px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgb(0,0,0,0.1);
+            }
+            .from-group{
+                margin-bottom: 20px;
+            }
+            label{
+                display: block;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            input[type="text"],
+            input[type="email"],
+            input[type="age"],
+            textarea {
+                width: 100%;
+                padding: 10px;
+                border:1px solid #ccc;
+                border-radius: 4x;
+                resize: vertical;
+            }
+            input[type="submit"] {
+                background-color: #4caf50;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: progress;
+            }
+            section {
+                width: 200px;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            input[type="Sbmit"]:hover{
+                background-color: #4caf50;
+            }
+        </style>
+    </head>
+    <body>
+    <h1><center>Primathon Academy Survey From </center></h1>
+    <div class="container">
+    <h2>Primathon Academy Survey From</h2>
+    <form>
+        <div class="from-group">
+            <label for="name"> Name:</label>
+            <input type="text"id="Name" name="name"placeholder="Enter Your name" required>
+        </div>
+        <div class="from-group">
+            <label for="Email"> Email</label>
+            <input type="text"id="Email" name="name"placeholder="Enter Your email" required>
+        </div>
+        <div class="from-group">
+            <label for="Age"> Age</label>
+            <input type="text"id="Age" name="AGE"placeholder="Enter Your age" required>
+        </div>
+        <p>Which option best describes you?</p>
+        <section>
+            <option>YES</option>
+            <option>No</option>
+            <option>Maybe</option>
+        </section>
+        <li>Languages and Frameworks known(Check all that apply)
+            <Select> 
+                  <option> Select </option>
+                  <option> C</option>
+                  <option> C++ </option>
+                  <option> C# </option>
+                  <option> JAVA </option>
+                  <option> MBA </option>
+                  <option> Python </option>
+                  <option> javascript</option>
+                  <option> React </option>
+                  <option> Angular </option>
+                  <option> Django </option>
+                  <option> Spring </option>
+                  </select>
+        <div class="from-group">
+            <label for="Any Comments or Suggestions">Any Comments or Suggestions</label>
+            <textarea id="Any Comments or Suggestions" name="Any Comments or Suggestions" rows="20"required></textarea>
+        </div>
+        <div class="from-group">
+            <input type="submit" value="submit">
+        </div>
+    </form>
+    </div>
+
+</body>
+</html>
+
+

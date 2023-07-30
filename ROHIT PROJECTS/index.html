@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        .p04 {
+            word-spacing: 2px;
+            margin-left: -10px;
+            width: 400px;
+
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 10px;
+            color: rgba(88, 84, 84, .9);
+            width: 1200px;
+        }
+
+        .p02 {
+            font-size: 35px;
+            margin-top: 10px;
+            width: 300px;
+
+        }
+
+        .HICON {
+            display: flex;
+        }
+
+
+        .p05 {
+            color: black;
+
+
+        }
+
+        id {}
+
+        nav {
+            text-align: center;
+            font-size: 20px;
+            word-spacing: 50px;
+        }
+
+        footer {
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            background-color: black;
+            color: white;
+        }
+
+        .title {
+            margin-bottom: 20px;
+            color: gray;
+        }
+
+        .left-panel {
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            padding-left: 9px;
+        }
+
+        .right-panel {
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+        }
+
+        section {
+            height: 4500px;
+        }
+
+        h1 {
+            font-style: italic;
+        }
+
+        .border {
+            margin-left: 10px;
+            border: 2px solid gray;
+            color: rgb(43, 38, 38);
+            background-color: gray;
+
+        }
+
+        .container {
+            display: flex;
+            margin-left: -30px;
+            word-spacing: 5px;
+            margin-right: 35px;
+            padding-right: 30px;
+        }
+
+        span {
+            margin-left: 10px;
+        }
+
+        i {
+            margin-left: 100px;
+        }
+
+        figcaption {
+            margin-left: 30px;
+        }
+
+        p {
+            margin-left: 40px;
+        }
+
+        main {
+            height: 600px;
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+
+
+        }
+
+        .women {
+            background-image: url(../image/women2\ fashion.jfif);
+            display: flex;
+            background-size: cover;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            height: 550px;
+            font-size: 40px;
+            color: white;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        .men {
+            background-image: url(../image/formal\ men.jpg);
+            display: flex;
+            background-size: cover;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            height: 550px;
+            font-size: 40px;
+            color: white;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        .kids {
+            background-image: url(../image/kids\ fashion.jpg);
+            display: flex;
+            background-size: cover;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            height: 550px;
+            font-size: 40px;
+            color: white;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        button {
+            width: 250px;
+            height: 50px;
+            font-size: 18px;
+            padding: 5px;
+            margin-top: 200px;
+
+        }
+
+        .sub-title {
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+
+        }
+
+        .icon {
+            color: red;
+            font-size: 15px;
+
+        }
+
+        .title {
+            font-size: 15px;
+            font-family: Arial;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px black;
+
+        }
+
+        .pera {
+            color: gray;
+            margin-left: 110px;
+        }
+
+        .detail {
+            height: 200px;
+            justify-content: center;
+            text-align: center;
+            margin: 40px;
+
+
+        }
+
+        .new {
+            font-size: 25px;
+            color: gray;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .best {
+            font-size: 50px;
+            color: black;
+            font-family: arial;
+            font-weight: bold;
+            margin-bottom: 15px
+        }
+
+        .para {
+            font-size: 20px;
+            color: gray;
+        }
+
+        .shop-type {
+            height: 500px;
+            display: grid;
+            grid-template-columns: 4fr 8fr;
+
+        }
+
+        .bag1 {
+            background-image: url(../image/women\ bag.jpg);
+            height: 400px;
+            width: 500px;
+            margin-left: 100px;
+            background-size: cover;
+        }
+
+        .print1 {
+            background-image: url(../image/men\ printed.jpg);
+            height: 400px;
+            width: 700px;
+            margin-left: -90px;
+            background-size: cover;
+        }
+
+        .bag {
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            align-items: center;
+            margin-top: 150px;
+            font-weight: bold;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        .bagbtn {
+            background-color: rgb(163, 161, 161);
+            width: fit-content;
+            font-size: 30px;
+            margin: 170px;
+            color: white;
+            font-weight: bold;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        .print {
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            align-items: center;
+            margin-top: 150px;
+            font-weight: bold;
+            text-shadow: 2px 2px 2px black;
+
+        }
+
+        .printbtn {
+
+            background-color: rgb(163, 161, 161);
+            width: fit-content;
+            font-size: 30px;
+            margin: 280px;
+            margin-top: 170px;
+            color: white;
+            font-weight: bold;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        .shoptype2 {
+            height: 400px;
+            display: grid;
+            grid-template-columns: 8fr 4fr;
+        }
+
+        .bag2 {
+            background-image: url(../image/women\ 6.jpg);
+            height: 400px;
+            width: 700px;
+            margin-left: 100px;
+            background-size: cover;
+        }
+
+        .print2 {
+            background-image: url(../image/lehnga\ women.jpg);
+            height: 400px;
+            width: 370px;
+            margin-left: -50px;
+            background-size: cover;
+        }
+
+        .bag3 {
+            color: rgb(33, 33, 29);
+            font-family: cursive;
+            width: fit-content;
+            font-size: 30px;
+            text-align: center;
+            margin-left: 150px;
+            font-weight: bold;
+
+        }
+
+        .bagbtn1 {
+            background-color: rgba(27, 26, 26, 0.5);
+            width: fit-content;
+            font-size: 25px;
+            margin-top: 330px;
+            color: white;
+            font-weight: bold;
+            text-shadow: 2px 2px 2px black;
+            margin-left: 240px;
+        }
+
+        .print3 {
+            color: rgb(249, 249, 246);
+            background-color: rgba(17, 17, 17, 0.5);
+            width: fit-content;
+            font-size: 30px;
+            text-align: center;
+            font-weight: bold;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        .printbtn1 {
+            background-color: rgba(205, 195, 195, 0.5);
+            width: fit-content;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 340px;
+            color: white;
+            font-weight: bold;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        .top {
+            font-size: 35px;
+            font-family: arial;
+            text-align: center;
+            margin-top: 40px;
+            color: rgb(39, 35, 35);
+        }
+
+        .panel {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+        .panel div{
+            font-size: 15px;
+            margin: 40px;
+            margin-top: 10px;
+        }
+        .panel-img{
+            display: flex;
+            padding: 10px;
+             justify-content: space-evenly;
+        }
+        .fig{
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: cursive;
+        }
+        .figg{
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h3{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            margin-top: 50px;
+            margin-bottom: -5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <nav class="p04"> citizen club &nbsp;
+                All stores&nbsp;
+                Help&support
+            </nav>
+            <img src="../image/shopper icon.jpg" alt="none">
+
+        </div>
+        <div>
+            <div class="p02"><b> Shoppers Stop</b></div>
+        </div>
+        <div class="HICON">
+            <div><i class="fa-regular fa-heart"></i></div>
+            <div><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div><i class="fa-solid fa-house"></i></div>
+            <div><i class="fa-solid fa-cart-shopping"></i></div>
+        </div>
+    </header>
+    <hr>
+    <section>
+        <nav>MEN
+            WOMEN
+            BEAUTY
+            WATCHES
+            KIDS
+            HOMESTOP
+            GIFTS
+            BRANDS
+            DESIGN
+        </nav>
+        <img src="../image/DISCOUNT.jpg" alt="error" width="1240px">
+        <img src="../image/picture.JPG" alt="none" width="1240px">
+        
+        <main>
+            <div class="women">
+                <div>
+                    <h1>Women</h1>
+                    <div>
+                        <button>Shop Women<span><i class="fa-sharp fa-solid fa-arrow-right"></i></span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="men">
+                <div>
+                    <h1>Men</h1>
+                    <div>
+                        <button>Shop men<i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="kids">
+                <div>
+                    <h1>Kids</h1>
+                    <div>
+                        <button>Shop kids<i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="sub-title">
+            <div>
+                <div class="title">
+                    <span class="icon"> <i class="fa-solid fa-truck"></i></span>
+                    FREE SHIPPING
+                </div>
+                <p class="pera">From all orders over $100</p>
+            </div>
+            <div>
+                <div class="title">
+                    <span class="icon"><i class="fa-solid fa-arrows-rotate"></i></span>
+                    FREE RETURNS
+                </div>
+                <p class="pera">Return money within 30 days</p>
+            </div>
+            <div>
+                <div class="title">
+                    <span class="icon"><i class="fa-solid fa-tag"></i></span>
+                    SECURE SHOPPING
+                </div>
+                <p class="pera">Return money within 30 days</p>
+            </div>
+            <div>
+                <div class="title">
+                    <span class="icon"><i class="fa-sharp fa-solid fa-user"></i></span>
+                    OVER 10,000 STYLES
+                </div>
+                <p class="pera"> We have everything you need</p>
+            </div>
+        </div>
+        <div class="detail">
+            <div class="new">NEW COLLECTION</div>
+            <div class="best">Best Picks 2019</div>
+            <div class="para">Appear, dry there darkness they're seas, dry waters thing fly midst. Beast,<br> above fly
+                brought Very green.
+            </div>
+        </div>
+        <div class="shop-type">
+            <div class="bag1">
+                <div class="bag">Bags Collection</div>
+                <div class="bagbtn">Shop Now</div>
+            </div>
+            <div class="print1">
+                <div class="print">Printed Men's Shirts</div>
+                <div class="printbtn">Shop Now </div>
+            </div>
+        </div>
+        <div class="shoptype2">
+            <div class="bag2">
+                <div class="bag3">Basic women's Accessories</div>
+                <div class="bagbtn1">Shop Now</div>
+            </div>
+            <div class="print2">
+                <div class="print3">Traditional</div>
+                <div class="printbtn1">Shop Now </div>
+            </div>
+        </div>
+         <div>
+                <h1 class="top">Top Month Sellers</h1>
+            </div>
+            <div class="panel">
+                <div>Women</div>
+                <div>Men</div>
+                <div>Kids</div>
+            </div>
+        </div>
+        <hr size="2" width="200px">
+        <div class="panel-img">
+            <div>
+          <figure><img src="../image/chapple new.webp" alt="none" width="250" height="300"></figure>
+          <figcaption  class="fig">
+            <div>Slipper</div>
+            <div class="figg">Leather mid-heel Sandals <br>$129.00 </div>
+         </figcaption>
+        </div>
+        <div>
+            <figure><img src="../image/women shorts.jpg" alt="none" width="250" height="300"></figure>
+            <figcaption  class="fig">
+              <div>Dresses</div>
+              <div class="figg">Cotton floral print Dress <br>$40.00 </div>
+           </figcaption>
+          </div>
+          <div>
+            <figure><img src="../image/shoes new.jpg" alt="none" width="250" height="300"></figure>
+            <figcaption  class="fig">
+              <div>Shoes</div>
+              <div class="figg">Leather Sneakers<br>$85.00 </div>
+           </figcaption>
+          </div>
+          <div>
+            <figure><img src="../image/women.jpg" alt="none" width="250" height="300"></figure>
+            <figcaption class="fig">
+              <div>Tops</div>
+              <div class="figg">Cropped cotton Top <br>$29.00 </div>
+           </figcaption>
+          </div>
+        </div>
+
+
+        <h1>You may also be interested in</h1>
+        <div class="container">
+            <div>
+                <figure> <img src="../image/hovercamera cards.webp" alt="none" width="250" height="300"></figure>
+                <figcaption><span>
+                        <font color="green">FUNDING</font>
+                    </span><i class="fa-regular fa-heart"></i></figcaption>
+                <p><b>Hover Camera X1:</b> Pocket-Sized <br>Self-Flying Camera</p>
+            </div>
+            <div>
+                <figure> <img src="../image/hairlosscards.webp" alt="none" width="250" height="300"></figure>
+                <figcaption><span>
+                        <font color="green">FUNDING</font>
+                    </span><i class="fa-regular fa-heart"></i></figcaption>
+                <p><b>niostem:</b> Reverse Hair <br> Loss in 6 months</p>
+            </div>
+            <div>
+                <figure> <img src="../image/cards chaku.webp" alt="none" width="250" height="300">
+                    <figcaption style="margin-top: 13px; margin-left: -5px;"><span>
+                            <font color="green">FUNDING</font>
+                        </span><i class="fa-regular fa-heart"></i></figcaption>
+                    <p style="margin-left: -1px;"><b>The Mandala EDC Knife </b>- Ti Handle with M390 Blade</p>
+            </div>
+            <div>
+                <figure> <img src="../image/cards watch.webp" alt="none" width="250" height="300"></figure>
+                <figcaption><span>
+                        <font color="green">FUNDING</font>
+                    </span><i class="fa-regular fa-heart"></i></figcaption>
+                <p><b>Core One:</b> The World's Smallest <br> OTC Hearing Aids</p>
+            </div>
+        </div>
+        <h3>Discover More</h3>
+        <hr size="2" width="150px">
+        <img src="../image/image big.JPG" width="1250" height="500">
+        
+
+
+
+
+    </section>
+
+    <footer>
+        <div class="left-panel">
+            <div>
+                <div class="title">About</div>
+                <div>contact us</div>
+                <div>about us</div>
+                <div>careers</div>
+                <div>flipkart stories</div>
+                <div>press</div>
+                <div>flipkart wholesale</div>
+                <div>corporate information</div>
+            </div>
+            <div>
+                <div class="title">Help</div>
+                <div>payments</div>
+                <div>shipping</div>
+                <div>cancellation & return</div>
+                <div>FAQ</div>
+            </div>
+            <div>
+                <div class="title">Consumer Police</div>
+                <div>return policy</div>
+                <div>terms of use</div>
+                <div>security</div>
+                <div>privacy</div>
+                <div>sitemap</div>
+            </div>
+            <div>
+                <div class="title">Social</div>
+                <div> facebook</div>
+                <div>twitter</div>
+                <div>youtube</div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div>
+                <div class="title">Mall us:</div>
+                <div>shopper internet private limited</div>
+                <div>building alyssa,begonia</div>
+                <div>clove embassy tech village</div>
+                <div>outer ring road</div>
+                <div>bengaluru ,560103</div>
+            </div>
+            <div>
+                <div class="title">Register office</div>
+                <div>shopper internet private limited</div>
+                <div>building alyssa begonia</div>
+                <div> clove embassy tech village</div>
+                <div>outer ring road</div>
+                <div>bengluru 560100</div>
+                <div>karnatak,india</div>
+                <div style="color: blue;">telephone 044-767374</div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+</body>
+
+</html>

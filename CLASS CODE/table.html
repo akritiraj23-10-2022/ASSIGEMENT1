@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Elements</title>
+    <style>
+        table,
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid blue;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+        </tr>
+        <tr>
+            <td>Cell 4</td>
+            <td>Cell 5</td>
+            <td>Cell 6</td>
+        </tr>
+         <!--second table created-->
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email Address</th>
+    </tr>
+    <tr>
+        <th>Akriti Raj</th>
+        <th>Matho</th>
+        <th>table@gmail.com</th>
+    </tr>
+    <tr>
+        <th>Lary</th>
+        <th>Mark</th>
+        <th>developer@gmail.com</th>
+    </tr>
+    </table>
+    <!--Caption Syntax-->
+    <h3>Caption Syntax</h3>
+    <table>
+        <caption>Free Coading Resorses</caption>
+        <tr>
+        <th>Sites</th>
+        <th>Youtube Channels</th>
+        <th>Mobile Apps</th>
+        </tr>
+
+        <tr>
+            <td>Freecode camp</td>
+            <td>Freecode camp</td>
+            <td>Enlci</td>
+        </tr>
+
+        <tr>
+            <td>W3 schools</td>
+            <td>Acadenind</td>
+            <td>Programming Hero</td>
+        </tr>
+
+        <tr>
+            <td>Khan Academy</td>
+            <td>The coading Train</td>
+            <td>Solo Learn</td>
+        </tr>
+    </table>
+
+    <!--scope Syntax-->
+    <h3>SCOPE Syntax</h3>
+    <table>
+        <tr>
+            <th scope="value"></th>
+        </tr>
+    </table>
+    <table>
+        <tr>
+        <th></th>
+        <th scope="col">Semester</th>
+        <th scope="col">Grade</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td> Jan. April</td>
+            <td>Credit</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td> May. August</td>
+            <td>Pass</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td> September. December</td>
+            <td>Distinction</td>
+        </tr>
+
+    </table>
+
+    <!--cell Spanning -->
+    <h2>Cell Spanning</h2>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Marks</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Hillary</td>
+        <td>Advanced Web</td>
+        <td>75</td>
+    </tr>
+
+    <tr>
+        <td>Operating System</td>
+        <td>60</td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">Lary</td>
+        <td>Advanced Web</td>
+        <td>80</td>
+    </tr>
+    <td>Operating System</td>
+    <td>75</td>
+
+    <tr>
+        <td></td>
+        <td colspan="3">Total Average: 72.5</td>
+    </tr>
+</table>
+
+<!--Adding a Table Header Body & Footer in Table-->
+<h2>Adding a Table Header Body & Footer in Table</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">October</th>
+            <th colspan="2">November</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td> Sales</td>
+            <td>Profit</td>
+            <td>Sales</td>
+            <td>Profit</td>
+        </tr>
+        <tr>
+            <td>$200,00</td>
+            <td>$50,00</td>
+            <td>$300,000</td>
+            <td>$70,000</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <th colspan="4">November was more productive</th>
+        </tr>
+    </tfoot>
+</table>
+<!--table is end -->
+</body>
+</html>

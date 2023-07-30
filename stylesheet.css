@@ -1,0 +1,21 @@
+/*we can set boder- radius*/
+#left {  
+    border-bottom-right-radius: 50%;  
+    background: light rgb(64, 212, 200);  
+    padding: 50px;  
+    border: 6px ridge rgb(15, 64, 138);  
+    width: 300px;  
+    height: 200px;  
+    font-size: 25px;  
+    } 
+ 
+ #left {  
+border-radius: 50%;  
+background: light green;  
+padding: 50px;  
+border: 6px ridge red;  
+width: 300px;  
+height: 200px;  
+font-size: 25px;  
+} 
+

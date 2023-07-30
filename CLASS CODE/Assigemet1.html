@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigements 1</title>
+    <style>
+        div{
+          border: solid black 3px;
+          height: 200px;
+          border-right: 10px;
+          border-top: 10px;
+        }
+       
+        nav{
+            background-color: rgb(23, 202, 133);;
+            height: 70px;
+            width: 100%;
+        }
+        .logo{
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 70px;
+            padding: 0 100px;
+        }
+        nav ul{
+            display: inline-block;
+            float: right;
+        }
+        nav ul li{
+            display: inline-block;
+            margin: 0 50px;
+        }
+        nav ul li a{
+            color: white;
+    
+        }
+        .container{
+          width: 50%;
+          justify-content: center;
+          border: solid black 3px;
+          margin: 50px;
+        }
+       .ul{
+        border: black 10px solid;
+        width: 30%;
+        border-right: 10px;
+        border-left: 10px;
+      }
+
+        .navigation {
+  justify-content: center;
+  background: rgb(25, 189, 61);
+  flex-direction: column;
+}
+ 
+/*website code*/
+
+.navigation a {
+  display: block;
+  padding: 14px;
+  color: white;
+  
+}
+
+.navigation a:hover {
+  background: #1565C0;
+  
+}
+/*this is a responsive parts in a css*/
+/*@media all and (max-width: 800px) 
+  .navigation {
+    justify-content: space-around;
+  }
+  @media all and (max-width: 600px) {}
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+
+  }
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}*/
+  </style>
+</head>
+<body>
+    <p><h1>Desktop Screen View:</h1></p>
+    <div>
+            <nav>
+        <label class="logo">AK</label>
+        <ul>
+            <li><a href="#">Home</a></li> 
+            <li><a href="#">About</a></li> 
+            <li><a href="#">Products</a></li> 
+            <li><a href="#">Contact</a></li> 
+         </ul>
+     </nav>
+    </div>
+    <p><h1>Medium Screen View:</h1></p>
+    <div class="container">
+      <nav>
+        <ul class="i5">
+          <li><a href="#">Home</a></li> 
+          <li><a href="#">About</a></li> 
+          <li><a href="#">Products</a></li> 
+          <li><a href="#">Contact</a></li> 
+       </ul>
+      </nav>
+    </div>
+    <p><h1>Small Screen View:</h1></p>
+    <div class="ul">
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+</body>
+</html>

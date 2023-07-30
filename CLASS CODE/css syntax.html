@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS syntax</title>
+    <style>
+        .red {
+            color: red;
+        }
+        .thick {
+            font-size: 20px;
+        }
+        .green {
+            color: green;
+        }
+    </style>
+    <style type="text/css">
+        .blue {
+            color:blue;
+        }
+        .bold {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .olive {
+            color: olive;
+        }
+    </style>
+</head>
+<body>
+    <!-- external css-->
+    <p class="red">This is a red.</p>
+    <p class="thick">This is thick</p>
+    <p class="green">This is a green</p>
+    <p class="thick green">This is a thick green.</p>
+
+    <!--internal style sheet-->
+    <p class="color:red;">This is a red</p>
+    <p class="font-size:40px;">This is  thick</p>
+    <p class="color:green;">This is green</p>
+    <p style="color:green;font-size:40px;">This is thick and green</p>
+    <p style="color: red;" class="blue">You are future</p>
+    <p style="font-weight: 400;" class="bold">Primithon help for to get your drems</p>
+    <p class="brown olive">Work hard , take challenge</p>
+    <p class="bold blue">You become a problem solver</p>
+    <!--css syntax end-->
+</body>
+</html>

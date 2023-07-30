@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>content Us</title>
+        <style>
+            /*css style for the content from and footer*/
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: cornflowerblue;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                max-width: 500px;
+                margin: auto;
+                padding: 200px;
+                background-image: url(../slider_1.jpg );
+                border-radius: 5px;
+                box-shadow: 0 0 10px rebeccapurple;
+            }
+            h1 {
+                text-align: center;
+                margin-bottom: 40px
+            }
+
+            label {
+                display: block;
+                margin-bottom: 30px;
+                font-weight: bold;
+            }
+            input [type="text"],
+            textarea {
+                width: 100px;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            input[type="submit"] {
+                width: 100px;
+                padding: 10px;
+                background-color: yellowgreen;
+                border: none;
+                color: #fff;
+                font-family: bold;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover {
+                background-color: black;
+            }
+            /*Css styling for the footer*/
+            .footer {
+                background-color: #85df9b;
+                color: #071e33;
+                padding: 5px;
+                text-align: center;
+            }
+            .footer a {
+                color: #21074b;
+                text-decoration: none;
+                margin: 0 40px;
+            }
+        </style>
+    </head>
+    <body >
+        <div class="container">
+            <h1>Contact Us</h1>
+            <form>
+                <label for="Name">Name:</label>
+                <input type="text" id="Name" required>
+
+                <label for="Email">Email:</label>
+                <input type="text" id="Email" required>
+                
+                <label for="Message">Message:</label>
+                <input type="text" id="Message" required></br>
+
+                <input type="submit" value="submit">
+            </form>
+        </div>
+
+        <footer class="footer">
+            <p>Follow us on Social media:</p>
+            <a href="#"target="_blank">Facebook</a>
+            <a href="#"target="_blank">Instagram</a>
+            <a href="#"target="_blank">Twitter</a>
+            <a href="#"target="_blank">LinkedIn</a>
+        </footer>
+    </body>
+</html>
