@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>: Example to better understand the different function values: Here are five different div elements with five different values.</title>
+    <style>
+        div {
+            width: 100px;
+            height: 50px;
+            background: red;
+            color:white;
+            font-weight: bold;
+            transform: width 2s;
+        }
+        #div1 {transition-timing-function: linear;font-size: 20px;margin-bottom: 20px;}
+        #div2 {transition-timing-function: ease;font-size: 20px;margin-bottom: 20px;}
+        #div3 {transition-timing-function: ease-in;font-size: 20px;margin-bottom: 20px;}
+        #div4 {transition-timing-function: ease-out;font-size: 20px;margin-bottom: 20px;}
+        #div5 {transition-timing-function: ease-in-out;font-size: 20px;margin-bottom: 20px;}
+
+        div:hover {
+            width: 300px;
+        }
+
+</style>
+
+</head>
+<body>
+<h1>The transition-timing-function property</h1>
+<div id="div1">linear</div>  
+<div id="div2">ease</div>
+<div id="div3">ease-in</div>
+<div id="div4">ease-out</div>
+<div id="div5">ease-in-out</div>  
+</body>
+</html>

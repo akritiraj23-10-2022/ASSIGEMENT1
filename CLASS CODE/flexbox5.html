@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS flexbox align-items</title>
+    <style>
+        /*Basic set up html & css*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .containar {
+            background-color: #cccccc;
+            padding: 10px;
+        }
+        .item {
+            background-color: #f1425d;
+            padding:20px;
+            margin:30px;
+            font-size: 40px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+/*align-items*/
+/*CSS Change*/
+.containar {
+    background-color: #cccccc;
+    padding: 10px;
+    height: 200px;
+    display: flex;
+}
+.item {
+    background-color: #f1425d;
+    margin: 20px;
+    padding: 20px;
+    width: 20px;
+    color: #ffffff;
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: bold;
+}
+/*stretch*/
+.containar {
+    background-color: #cccccc;
+    padding: 10px;
+    display: flex;
+    align-items: stretch;
+}
+/*flex-start/start/self-start*/
+.containar{
+    background-color: #cccccc;
+    padding: 10px;
+    display: flex;
+    align-items: start;
+}
+/*flex-end/end/self-end*/
+.containar{
+    background-color: #cccccc;
+    padding: 10px;
+    display: flex;
+    align-items: end;
+}
+/*center*/
+.containar {
+    background-color: #cccccc;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+/*baseline*/
+.containar {
+    background-color:#cccccc;
+    padding:10px;
+    display: flex;
+    align-items: baseline;
+}
+    </style>
+</head>
+<body>
+    <div class="containar">
+        <div class="item i1">1</div>
+        <div class="item i2">2</div>
+        <div class="item i3">3</div>
+        <div class="item i4">4</div>
+        <div class="item i5">5</div>
+</div>
+</body>
+</html>

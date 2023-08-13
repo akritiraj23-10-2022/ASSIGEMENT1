@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The left side image is an Html page with css and the right side image is the same Html page without css
+
+    </title>
+    <style>
+    body {
+        background: linear-gradient(90deg, rgba (122,180,255,1)0%, rgba)
+    }
+    .wrapper {
+        margin-top: 200px;
+    }
+    .big-circle {
+        animation: puls 1.5s alternate infinite;
+        margin: 0 auto;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        background-color: rgba(255, 255, 255,.3);
+    }
+    .small-circle {
+        position: relative;
+        top: 50px;
+        left: 50px;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        background-color: white;
+    }
+    .small-circle:hover {
+        animation: shake .1s alternate infinite;
+    }
+    @keyframes pulse {
+        from{
+            transform: scale(1);
+        }
+        to {
+            transform: scale(1.5);
+        }
+    }
+    @keyframes shake {
+        0% {
+            transform: translate(0%);
+        }
+        25%,75% {
+            transform: translateY(1%);
+        }
+        50%, 100% {
+            transform: translateX(1%);
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="big-circle">
+         <div class="small-circle"></div>
+         </div>
+        </div>
+    </div>
+    <!--this code not completed-->
+</body>
+</html>

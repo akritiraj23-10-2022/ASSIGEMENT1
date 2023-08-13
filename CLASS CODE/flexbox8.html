@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS flexbox flex-grow</title>
+    <style>
+        /*Basic set up html & css*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .containar {
+            background-color: #cccccc;
+            padding: 10px;
+        }
+        .item {
+            background-color: #f1425d;
+            padding:20px;
+            margin:30px;
+            font-size: 40px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+/*flex-grow 
+NOTE: Negitive numbers are invalid*/
+.i5{
+    flex-grow: 1;/*default order 0*/
+}
+/*flex-shrink
+CSS and HTML Changes*/
+.i5 {
+    flex-shrink: 2;/*defult order 1*/
+}
+.ig {
+    flex-grow: 1;
+}
+
+/*align-self*/
+.item {
+    align-self: auto | flex-start | flex-end | center | baseline | stretch;
+}
+.containar {
+    background-color: #cccccc;
+    padding: 10px;
+    display: flex;
+    height: 200px;
+}
+.start {
+    align-self: flex-start;
+}
+.end {
+    align-self:flex-end;
+}
+    </style>
+</head>
+<body>
+    <div class="containar">
+        <div class="item start">1</div>
+        <div class="item end">2</div>
+        <div class="item start">3</div>
+        <div class="item end">4</div>
+        <div class="item start">5</div>
+</div>
+<!--flexbox is topic end-->
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Same as the example1 above, but the speed curves are specified with the cubic-bezier function.
+    </title>
+    <style>
+        div {
+            width: 100px;
+            height: 50px;
+            background: red;
+            color: white;
+            font-weight: bold;
+            transform: width 2s;
+        }
+        #div1 {transition-timing-function: cubic-bezier(0,0,1,1); nargin-button:30px}
+        #div2 {transition-timing-function: cubic-bezier(0.25,0.1,0.25,1); nargin-button:30px}
+        #div3 {transition-timing-function: cubic-bezier(0.42,0,1,1); nargin-button:30px}
+        #div4 {transition-timing-function: cubic-bezier(0,0,0.58,1); nargin-button:30px}
+        #div5 {transition-timing-function: cubic-bezier(0.42,0,0.58,1); nargin-button:30px}
+
+        div:hover {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>The transition-timing-function property</h1>
+    <div id="div1">cubic-bezier(0,0,1,1)</div>
+    <div id="div2">cubic-bezier(0.25,0.1,0.25,1)</div>
+    <div id="div3">cubic-bezier(0.42,0,1,1)</div>
+    <div id="div4">cubic-bezier(0,0,0.58,1)</div>
+    <div id="div5">cubic-bezier(0.42,0,0.58,1)</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO Demonstrate that the animations should complite one cicle in 3 seconds.</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation: mymove infinite;
+            animation-duration: 3s;   
+        }
+        @keyframes mymove {
+            from {top: 0px;}
+            to {top: 200px;}
+        }
+    </style>
+</head>
+<body>
+    <h2>Specify thet the animation should complite one cycle in 3 seconds:</h2>
+    <div></div>
+</body>
+</html>

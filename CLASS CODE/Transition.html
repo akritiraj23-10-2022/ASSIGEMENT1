@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Transition Let the transition effiect last for 5 seconds </title>
+    <style>
+        div {
+            width: 300px;
+            height: 100px;
+            background: red;
+            transition-property: width;/*The CSS property we want to change*/
+            transition-duration: 5s;
+            color: white;
+        }
+        div:hover {
+            width: 600px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Hover over the div element below, to see the transition effect(the transition effect will lasts for 5 seconds):</h1>
+    <div></div>
+</body>
+</html>

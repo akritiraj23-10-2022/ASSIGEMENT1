@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example to create Push button effect.</title>
+    <style>
+        ul#flex-menu {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        a.flex-item {
+            display: block;
+            margin: 5px;
+            padding: .6em 2em;
+            text-decoration: none;
+            text-align: center;
+            color: darkslategray;
+            border: 5px solid lightgray;
+            border-radius: 6px;
+            box-shadow: 0 4px 2px rgba(0,0,0,.5);
+            position: relative;
+            top: 0px;
+            transition: all .3s;
+        }
+
+        a.flex-item:hover, a.flex-item:focus {
+            background-color: #ffd13f;
+            border-color: #ffd13f;
+        }
+
+        a.flex-item:active {
+            top: 3px;
+            box-shadow: 0 1px 2px darkgray;
+        }
+    </style>
+</head>
+<body>
+    <ul id="flex-menu">
+        <li><a class="flex-item" href="">HTML</a></li>
+        <li><a class="flex-item" href="">JavaScript</a></li>
+        <li><a class="flex-item" href="">CSS</a></li>
+        <li><a class="flex-item" href="">PHP</a></li>
+        <li><a class="flex-item" href="">Linux</a></li>
+        <li><a class="flex-item" href="">Windows</a></li>
+        <li><a class="flex-item" href="">Cloud</a></li>
+    </ul>
+    
+</body>
+</html>

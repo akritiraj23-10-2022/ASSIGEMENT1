@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example to add an inneer border to an element by way of box-shadow</title>
+    <style>
+        p.inner-border {
+            display: flex;
+            height: 200px;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            border: 30px solid lightblue;
+            margin: 1em auto 1em auto;
+            width: 50%;
+            padding: 15px 15px;
+            font-weight: bold;
+            transition-property: box-shadow, color;
+            transition-duration: 1s;
+        }
+        inner-border:hover {
+            box-shadow: inset 0 0 0 30px lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <p class="inner-border">Primathon Academy</p>
+</body>
+</html>

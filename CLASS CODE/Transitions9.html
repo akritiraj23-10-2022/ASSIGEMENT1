@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover over the Primathon Academy element to see the background-color transition and border-radius transition in action.</title>
+    <style>
+        a.transition2 {
+            margin: auto;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            padding: 1em;
+            width: 20em;
+            border-radius: 2em;
+            background-color: blue;
+            color: #fff;
+            transition-property: background-color,border-radius;
+            transition-duration: 1s, 3s;
+        }
+        a.transition2:hover, a.transition2:focus {
+            background-color: green;
+            border-radius: 0;
+        }
+    </style>
+</head>
+<body>
+    <a class="transition2">Parimathon Academy</a>
+</body>
+</html>

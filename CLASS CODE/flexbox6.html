@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS flexbox align-items</title>
+    <style>
+        /*Basic set up html & css*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .containar {
+            background-color: #cccccc;
+            padding: 10px;
+        }
+        .item {
+            background-color: #f1425d;
+            padding:20px;
+            margin:30px;
+            font-size: 40px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+/*gap,row-gap,column-gap*/
+/*CSS and HTML Changes
+Note: Screen width should be 768px*/
+.containar {
+    background-color: #cccccc;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item {
+    background-color: #f1425d;
+    padding: 20px;
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: bold;
+    border: 1px black solid;
+}
+.containar {
+    background-color: #cccccc;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.containar {
+    background-color: #cccccc;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+/*Screen width should be 425px*/
+.containar {
+background-color: #cccccc;
+padding: 10px;
+display: flex;
+flex-wrap: wrap;
+row-gap: 10px;
+}
+.containar {
+background-color: #cccccc;
+padding: 10px;
+display: flex;
+flex-wrap: wrap;
+column-gap: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="containar">
+        <div class="item i1">1</div>
+        <div class="item i2">2</div>
+        <div class="item i3">3</div>
+        <div class="item i4">4</div>
+        <div class="item i5">5</div>
+        <div class="item i5">6</div>
+        <div class="item i5">7</div>
+        <div class="item i5">8</div>
+        <div class="item i5">9</div>
+        <div class="item i5">10</div>
+</div>
+</body>
+</html>

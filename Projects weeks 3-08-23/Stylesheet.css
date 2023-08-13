@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    height:100%;
+}
+.header{
+    display:flex;
+    padding: 50px 100px;
+    justify-content: space-between;
+}
+.header .menu{
+    display: flex;
+    column-gap: 60px;
+}
+.contentwrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-left: 100px;
+    margin-top: 100px;
+    max-width: 360px;
+}
+.contentwrapper div:nth-of-type(1){
+    color: #FF922C;
+    font-weight: 600;
+    line-height: 66px;
+    font-size: 44px;
+}
+.contentwrapper div:nth-of-type(2){
+    font-family: poppins;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.contentwrapper div:nth-of-type(3){
+    font-family: poppins;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.contentwrapper div button{
+    width:163px;
+    height:48px;
+    background:#FF922C;
+    border-radius:69px;
+    border:none;
+    box-shadow:0px 20px 40px #FFFFFF;
+    font-family: poppins;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: #FFFFFF;  
+}
+.bg{
+    background-color:#FFEEDE;
+    width: 1177px;
+    height: 1177px;
+    position:absolute;
+    border-radius: 50%;
+    top: -650px;
+    left: 300px;
+    z-index:-1;
+}
+.image-spin{
+    position: absolute;
+    width: 786px;
+    height: 521px;
+    left: 479px;
+    top:263px;
+}
+.image-circle{
+position: absolute;
+width:560px;
+height: 560px;
+left:592px;
+top:252px;
+border:2px dashed #FF922C;
+border-radius: 50%;
+background-image:url(./image/imagebg.png);
+background-repeat: no-repeat;
+background-position:center;
+
+}
+.image-circle img{
+    border-radius: 50%;
+}
+.image-circle .image1{
+    position: absolute;
+    left:42%;
+  top: -10%;
+}
+.image-circle .image2{
+    position: absolute;
+    top:10%;
+    right:80%
+}
+.image-circle .image3{
+    position: absolute;
+    top: 10%;
+    right: -8px;
+}
+.image-circle .image4{
+    position: absolute;
+    top:41.5%;
+    left:-8%;
+}
+.image-circle .image5{
+    position: absolute;
+    top:41.5%;
+    right:-8%;
+}

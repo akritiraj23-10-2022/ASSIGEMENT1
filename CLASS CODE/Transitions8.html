@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example to illustrate when an <input type="text">Get focuse, gradually change the width from 100px to 250px.</title>
+    <style>
+       input[type=text] {
+        width: 100px;
+        transition: width .35s ease-in-out;
+       }
+       input[type=text] :focus {
+        width: 250px;
+       }
+    </style>
+</head>
+<body>
+    <p>Set the  width of input field to 100 pixels. However, then  input field get focus, make it 250 pixels wide: </p>
+    Search: <input type="text" name="Search">
+</body>
+</html>

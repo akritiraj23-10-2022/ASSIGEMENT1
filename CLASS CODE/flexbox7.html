@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS flexbox Children (flex items)</title>
+    <style>
+        /*Basic set up html & css*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .containar {
+            background-color: #cccccc;
+            padding: 10px;
+        }
+        .item {
+            background-color: #f1425d;
+            padding:20px;
+            margin:30px;
+            font-size: 40px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+/*Properties for the Children(flex items)
+CSS and HTML Changes*/
+/*order*/
+.containar {
+   display: flex;
+   flex-direction: row;
+}
+.containar :nth-child(1) {order: 4;}
+.containar :nth-child(2) {order: 5;}
+.containar :nth-child(3) {order: 3;}
+.containar :nth-child(4) {order: 2;}
+.containar :nth-child(5) {order: 1;}
+    </style>
+</head>
+<body>
+    <div class="containar">
+        <div class="item i1">1</div>
+        <div class="item i2">2</div>
+        <div class="item i3">3</div>
+        <div class="item i4">4</div>
+        <div class="item i5">5</div>
+</div>
+</body>
+</html>

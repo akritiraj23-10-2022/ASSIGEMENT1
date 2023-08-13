@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example 3 media query</title>
+    <style>
+        .auto-grid{
+           --auto-grid-min-size: 16rem;
+           display: grid;
+           grid-template-columns: repeat(auto-fill,minmax(var(--auto-grid-min-size),1fr));
+           grid-gap : 1rem;
+        }
+        /* Presentational style */
+        body {
+            background: #efefef;
+            padding: 1rem;
+            line-height: 1.4;
+            font-family: sans-serif;
+        }
+        li {
+            padding: 5rem 1rem;
+            text-align: center;
+            font-size: 1.2rem;
+            background: #eb4deb;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, nam sequi rem similique quidem placeat quae tempora reiciendis quisquam id earum aperiam aspernatur facere. Voluptatem molestias quos reiciendis veritatis dolore. Exercitationem iure possimus corrupti facilis hic qui dolore sit, ut harum? Repellat consequatur, ullam a odit error asperiores praesentium ducimus.</li>
+</body>
+</html>

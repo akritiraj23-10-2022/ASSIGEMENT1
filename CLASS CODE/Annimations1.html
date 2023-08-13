@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To demonstrate how "mymove" is used as a  animation-name in @keyframs.</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation: mymove 5s infinite;
+        }
+        @keyframes mymove {
+            0% {top: 0px;}
+            25% {top: 200px;}
+            75% {top: 50px;}
+            100% {top: 100px;}
+        }
+    </style>
+</head>
+<body>
+    <h1>The @keyframes Rules</h1>
+    <div></div>
+</body>
+</html>
