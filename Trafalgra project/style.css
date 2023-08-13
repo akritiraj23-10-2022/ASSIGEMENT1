@@ -3,6 +3,57 @@
     padding: 0;
     box-sizing: border-box;
 }
+.navbar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
 .logo{
+    display: flex;
+    column-gap: 10px;
+}
+.logo .logo-bg {
+    width: 41px;
+    height: 41px;
+    background:#458FF6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Muli;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left ;
+    color: white;
+}
+.logo .logo-text{
+    font-family: Muli;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing:0em;
+    text-align: left;
+}
+.nav-link {
+    display: flex;
+    column-gap: 40px;
+}
+.nav-link div{
+    font-family: Muli;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.hero-section {
+    display: flex;
+    column-gap: 110px;
+    justify-content: space-around;
+}
+.hero-section .hero-text {
+    display: flex;
     
 }
